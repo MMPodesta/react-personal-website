@@ -46,17 +46,17 @@ export default function Home() {
           </nav>
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Mauricio Murta</h2>
-            <h3 className='text-2xl py-2 md:text-3xl'>Developer and designer.</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
+            <h3 className='text-2xl py-2 md:text-3xl dark:text-gray-300'>Developer and designer.</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-400'>
               I am a computer science student based in Dublin, 
               Interested in full stack development and cyber security.
             </p>
           </div>
           <div className='text-5xl flex justify-center gap-12 py-3 text-gray-600'>
-            <a href="https://github.com/MMPodesta" className='hover:text-gray-900' target='_blank'><AiFillGithub/></a>
-            <a href="https://www.linkedin.com/in/mauriciomurta/" className='hover:text-gray-900' target='_blank'><AiFillLinkedin/></a>
-            <a href="https://tryhackme.com/p/gangsta6" className='hover:text-gray-900' target='_blank'><Icon icon="simple-icons:tryhackme" /></a>
-            <a href="https://leetcode.com/MMPodesta/" className='hover:text-gray-900' target='_blank'><Icon icon="simple-icons:leetcode" /></a>
+            <a href="https://github.com/MMPodesta" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><AiFillGithub/></a>
+            <a href="https://www.linkedin.com/in/mauriciomurta/" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><AiFillLinkedin/></a>
+            <a href="https://tryhackme.com/p/gangsta6" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><Icon icon="simple-icons:tryhackme" /></a>
+            <a href="https://leetcode.com/MMPodesta/" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><Icon icon="simple-icons:leetcode" /></a>
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
             <Image src={deved} layout='fill' objectFit='cover'/>
