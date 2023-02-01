@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { Icon } from '@iconify/react';
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
 import design from "../public/design.png";
@@ -51,9 +52,11 @@ export default function Home() {
               Interested in full stack development and cyber security.
             </p>
           </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <AiFillGithub/>
-            <AiFillLinkedin/>
+          <div className='text-5xl flex justify-center gap-12 py-3 text-gray-600'>
+            <a href="https://github.com/MMPodesta" className='hover:text-gray-900' target='_blank'><AiFillGithub/></a>
+            <a href="https://www.linkedin.com/in/mauriciomurta/" className='hover:text-gray-900' target='_blank'><AiFillLinkedin/></a>
+            <a href="https://tryhackme.com/p/gangsta6" className='hover:text-gray-900' target='_blank'><Icon icon="simple-icons:tryhackme" /></a>
+            <a href="https://leetcode.com/MMPodesta/" className='hover:text-gray-900' target='_blank'><Icon icon="simple-icons:leetcode" /></a>
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
             <Image src={deved} layout='fill' objectFit='cover'/>
