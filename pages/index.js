@@ -40,7 +40,7 @@ export default function Home() {
               </li>
               <li><a className='bg-gradient-to-r from-cyan-500
                to-teal-500 bg-cyan-500 text-white px-4 py-2 
-               rounded-md ml-8' href='#'>Resume</a></li>
+               rounded-md ml-8' href='MauricioMurta_CV.pdf' target='_blank'>Resume</a></li>
             </ul>
           </nav>
           <div className='text-center p-10'>
@@ -79,12 +79,11 @@ export default function Home() {
                 Web Development
               </h3>
               <p className='py-2 dark:text-gray-400 '>
-                Development of responsive database-backed websites.
+                Development of responsive database-backed websites. <br /> Making use of modern frameworks and libraries.
               </p>
               <h4 className='py-4 text-teal-600 text-lg'>Web tools I use</h4>
               <p className='text-gray-800 py-1 dark:text-gray-400'>Next.js - React</p>
               <p className='text-gray-800 py-1 dark:text-gray-400'>Tailwind CSS</p>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>PHP</p>
               <p className='text-gray-800 py-1 dark:text-gray-400'>Firebase - MySql</p>
             </div>
             <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10 hover:shadow-teal-400'>
@@ -120,29 +119,24 @@ export default function Home() {
           <div>
             <h3 className='text-3xl py-1 dark:text-gray-300'>Portfolio</h3>
             <p className='text-md py-2 leading-8 text-gray-80 dark:text-gray-400 lg:text-lg'>
-              I am a computer science student based in Dublin, 
-              Interested in full stack development and cyber security.
+              My portfolio contains personal and university projects realated to web development.
             </p>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400 lg:text-lg'>
-              I am a computer science student based in Dublin, 
-              Interested in full stack development and cyber security.
-              I am a computer science student based in 
-              <span className='text-teal-500'> Dublin</span>, 
-              Interested in full stack development and cyber security.
+             They are all optimized to work either on small or large screens.
             </p>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1'>
-              <a href="https://knuth.griffith.ie/~s3065078/ass03/" target='_blank'><Image src={boomerang} className='rounded-lg object-cover' width={'100%'} height={'100%'} /></a>
+              <a href="https://knuth.griffith.ie/~s3065078/ass03/" target='_blank'><Image src={boomerang} className='rounded-lg object-cover hover:shadow-lg hover:shadow-teal-400' width={'100%'} height={'100%'} /></a>
             </div>
             <div className='basis-1/3 flex-1'>
-              <a href="https://store.mauriciomurta.com" target='_blank'><Image src={shoppy} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></a>
+              <a href="https://store.mauriciomurta.com" target='_blank'><Image src={shoppy} className='rounded-lg object-cover hover:shadow-lg hover:shadow-teal-400' width={'100%'} height={'100%'}/></a>
             </div>
             <div className='basis-1/3 flex-1'>
               <Image src={skate} className='rounded-lg object-cover' width={'100%'} height={'100%'}/>
             </div>
             <div className='basis-1/3 flex-1'>
-              <a href="https://knuth.griffith.ie/~s3065078/ass02/home.html" target='_blank'><Image src={garage} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></a>
+              <a href="https://knuth.griffith.ie/~s3065078/ass02/home.html" target='_blank'><Image src={garage} className='rounded-lg object-cover hover:shadow-lg hover:shadow-teal-400' width={'100%'} height={'100%'}/></a>
             </div>
           </div>
         </section>
