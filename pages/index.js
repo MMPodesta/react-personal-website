@@ -8,12 +8,11 @@ import deved from "../public/dev-ed-wave.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import boomerang from "../public/boomerang.png";
+import shoppy from "../public/shoppy.png";
+import skate from "../public/skate.png";
+import garage from "../public/garage.png";
+
 import { useState } from "react";
 
 
@@ -138,22 +137,16 @@ export default function Home() {
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1'>
-              <Image src={web1} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
+              <a href="https://knuth.griffith.ie/~s3065078/ass03/" target='_blank'><Image src={boomerang} className='rounded-lg object-cover' width={'100%'} height={'100%'} /></a>
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image src={web2} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
+              <a href="https://store.mauriciomurta.com" target='_blank'><Image src={shoppy} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></a>
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image src={web3} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
+              <Image src={skate} className='rounded-lg object-cover' width={'100%'} height={'100%'}/>
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image src={web4} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web5} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web6} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
+              <a href="https://knuth.griffith.ie/~s3065078/ass02/home.html" target='_blank'><Image src={garage} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></a>
             </div>
           </div>
         </section>
