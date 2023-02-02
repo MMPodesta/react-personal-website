@@ -36,7 +36,7 @@ export default function Home() {
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl 
-                hover:text-yellow-400 lg:text-3xl dark:text-gray-600 dark:hover:text-yellow-400 '/>
+                hover:text-yellow-400 lg:text-3xl dark:text-yellow-400 dark:hover:text-yellow-300 '/>
               </li>
               <li><a className='bg-gradient-to-r from-cyan-500
                to-teal-500 bg-cyan-500 text-white px-4 py-2 
@@ -51,7 +51,7 @@ export default function Home() {
               Interested in full stack development and cyber security.
             </p>
           </div>
-          <div className='text-5xl flex justify-center gap-12 py-3 text-gray-600'>
+          <div className='text-5xl flex justify-center gap-12 py-3 text-gray-600 lg:text-7xl'>
             <a href="https://github.com/MMPodesta" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><AiFillGithub/></a>
             <a href="https://www.linkedin.com/in/mauriciomurta/" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><AiFillLinkedin/></a>
             <a href="https://tryhackme.com/p/gangsta6" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><Icon icon="simple-icons:tryhackme" /></a>
@@ -60,7 +60,7 @@ export default function Home() {
         </section>
         
         <section>
-        <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
+          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
             <Image src={mauricio} layout='fill' objectFit='cover'/>
           </div>
           <div>
@@ -72,45 +72,46 @@ export default function Home() {
               My core skills are related to web development, objected-oriented programming and cyber security.
             </p>
           </div>
-          <div className='lg:flex lg:justify-around gap-10'>
+          <div className='lg:flex  gap-10'>
             <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10'>
-              <CgWebsite  className='text-8xl mx-auto'/>
+              <CgWebsite  className='text-8xl mx-auto dark:text-gray-500'/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-gray-300'>
                 Web Development
               </h3>
               <p className='py-2 dark:text-gray-400'>
-                Creating elegant designs suited for your project
+                Development of responsive database-backed websites.
               </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Photoshop</p>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Photoshop</p>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Photoshop</p>
+              <h4 className='py-4 text-teal-600 text-lg'>Web tools I use</h4>
+              <p className='text-gray-800 py-1 dark:text-gray-400'>Next.js - React</p>
+              <p className='text-gray-800 py-1 dark:text-gray-400'>Tailwind CSS</p>
+              <p className='text-gray-800 py-1 dark:text-gray-400'>PHP</p>
+              <p className='text-gray-800 py-1 dark:text-gray-400'>Firebase - MySql</p>
             </div>
             <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10'>
-              <BsCodeSlash  className='text-8xl mx-auto'/>
+              <BsCodeSlash  className='text-8xl mx-auto dark:text-gray-500'/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-gray-300'>
                 Programming
               </h3>
               <p className='py-2 dark:text-gray-400'>
-                Creating elegant designs suited for your project
+                Backend deveolpment aware of testing,<br /> concurency, time complexity, OOP and optimization.
               </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Photoshop</p>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Photoshop</p>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Photoshop</p>
+              <h4 className='py-4 text-teal-600 text-lg'>Programming tools I use</h4>
+              <p className='text-gray-800 py-1 dark:text-gray-400'>Java - Gradle</p>
+              <p className='text-gray-800 py-1 dark:text-gray-400'>JUnit5</p>
+              <p className='text-gray-800 py-1 dark:text-gray-400'>Python</p>
             </div>
             <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10'>
-              <MdOutlineSecurity  className='text-8xl mx-auto'/>
+              <MdOutlineSecurity  className='text-8xl mx-auto dark:text-gray-500'/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-gray-300'>
                 Cyber Security
               </h3>
               <p className='py-2 dark:text-gray-400'>
-                Creating elegant designs suited for your project
+                In the top 2% of learning platform tryhackme.com <br /> Knowledge on pentesting, privesc and industry standards.
               </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Photoshop</p>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Photoshop</p>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Photoshop</p>
+              <h4 className='py-4 text-teal-600 text-lg'>Security tools I use</h4>
+              <p className='text-gray-800 py-1 dark:text-gray-400'>Kali Linux</p>
+              <p className='text-gray-800 py-1 dark:text-gray-400'>Burp Suite</p>
+              <p className='text-gray-800 py-1 dark:text-gray-400'>Metasploit</p>
             </div>
           </div>
         </section>
