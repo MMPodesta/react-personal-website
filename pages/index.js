@@ -73,12 +73,12 @@ export default function Home() {
             </p>
           </div>
           <div className='lg:flex  gap-10'>
-            <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10 hover:shadow-teal-400'>
               <CgWebsite  className='text-8xl mx-auto dark:text-gray-500'/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-gray-300'>
                 Web Development
               </h3>
-              <p className='py-2 dark:text-gray-400'>
+              <p className='py-2 dark:text-gray-400 '>
                 Development of responsive database-backed websites.
               </p>
               <h4 className='py-4 text-teal-600 text-lg'>Web tools I use</h4>
@@ -87,7 +87,7 @@ export default function Home() {
               <p className='text-gray-800 py-1 dark:text-gray-400'>PHP</p>
               <p className='text-gray-800 py-1 dark:text-gray-400'>Firebase - MySql</p>
             </div>
-            <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10 hover:shadow-teal-400'>
               <BsCodeSlash  className='text-8xl mx-auto dark:text-gray-500'/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-gray-300'>
                 Programming
@@ -100,7 +100,7 @@ export default function Home() {
               <p className='text-gray-800 py-1 dark:text-gray-400'>JUnit5</p>
               <p className='text-gray-800 py-1 dark:text-gray-400'>Python</p>
             </div>
-            <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10 hover:shadow-teal-400'>
               <MdOutlineSecurity  className='text-8xl mx-auto dark:text-gray-500'/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-gray-300'>
                 Cyber Security
