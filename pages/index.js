@@ -65,11 +65,11 @@ export default function Home() {
         <section className='mt-2'>
           <div>
             <h3 className='text-3xl py-1 dark:text-gray-300'>Services I offer</h3>
-            <p className='text-md py-2 leading-8 text-gray-80 dark:text-gray-400'>
+            <p className='text-md py-2 leading-8 text-gray-80 dark:text-gray-400 lg:text-lg'>
               I am a computer science student based in Dublin, 
               Interested in full stack development and cyber security.
             </p>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400'>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400 lg:text-lg'>
               I am a computer science student based in Dublin, 
               Interested in full stack development and cyber security.
               I am a computer science student based in 
@@ -77,7 +77,7 @@ export default function Home() {
               Interested in full stack development and cyber security.
             </p>
           </div>
-          <div className='lg:flex gap-10'>
+          <div className='lg:flex lg:justify-around gap-10'>
             <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10'>
               <Image src={design} width={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-gray-300'>
@@ -123,11 +123,11 @@ export default function Home() {
         <section>
           <div>
             <h3 className='text-3xl py-1 dark:text-gray-300'>Portfolio</h3>
-            <p className='text-md py-2 leading-8 text-gray-80 dark:text-gray-400'>
+            <p className='text-md py-2 leading-8 text-gray-80 dark:text-gray-400 lg:text-lg'>
               I am a computer science student based in Dublin, 
               Interested in full stack development and cyber security.
             </p>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400'>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400 lg:text-lg'>
               I am a computer science student based in Dublin, 
               Interested in full stack development and cyber security.
               I am a computer science student based in 
