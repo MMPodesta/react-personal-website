@@ -1,13 +1,11 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import { BsFillMoonStarsFill } from 'react-icons/bs'
+import { BsFillMoonStarsFill, BsCodeSlash } from 'react-icons/bs'
+import { MdOutlineSecurity } from 'react-icons/md'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { CgWebsite }from 'react-icons/cg';
 import { Icon } from '@iconify/react';
 import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
-import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
 import boomerang from "../public/boomerang.png";
 import shoppy from "../public/shoppy.png";
 import skate from "../public/skate.png";
@@ -48,7 +46,7 @@ export default function Home() {
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl '>Mauricio Murta</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-gray-300'>Computer Science Student</h3>
             <p className='text-base py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-400'>
-              I am a computer science student based in Dublin, 
+              Based in Dublin <br /> 
               Interested in full stack development and cyber security.
             </p>
           </div>
@@ -65,24 +63,19 @@ export default function Home() {
             <Image src={mauricio} layout='fill' objectFit='cover'/>
           </div>
           <div>
-            <h3 className='text-3xl py-1 dark:text-gray-300'>Services I offer</h3>
+            <h3 className='text-3xl py-1 dark:text-gray-300'>My Skills</h3>
             <p className='text-md py-2 leading-8 text-gray-80 dark:text-gray-400 lg:text-lg'>
-              I am a computer science student based in Dublin, 
-              Interested in full stack development and cyber security.
+              Expected to graduate in 2024. Throughout my degree, I have learned a lot about the design, development and maintenance of software.
             </p>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400 lg:text-lg'>
-              I am a computer science student based in Dublin, 
-              Interested in full stack development and cyber security.
-              I am a computer science student based in 
-              <span className='text-teal-500'> Dublin</span>, 
-              Interested in full stack development and cyber security.
+              My core skills are related to web development, objected-oriented programming and cyber security.
             </p>
           </div>
           <div className='lg:flex lg:justify-around gap-10'>
             <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10'>
-              <Image src={design} width={100} height={100} className='mx-auto'/>
+              <CgWebsite  className='text-8xl mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-gray-300'>
-                Beatiful Designs
+                Web Development
               </h3>
               <p className='py-2 dark:text-gray-400'>
                 Creating elegant designs suited for your project
@@ -93,9 +86,9 @@ export default function Home() {
               <p className='text-gray-800 py-1 dark:text-gray-400'>Photoshop</p>
             </div>
             <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10'>
-              <Image src={code} width={100} height={100} className='mx-auto'/>
+              <BsCodeSlash  className='text-8xl mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-gray-300'>
-                Beatiful Designs
+                Programming
               </h3>
               <p className='py-2 dark:text-gray-400'>
                 Creating elegant designs suited for your project
@@ -106,9 +99,9 @@ export default function Home() {
               <p className='text-gray-800 py-1 dark:text-gray-400'>Photoshop</p>
             </div>
             <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10'>
-              <Image src={consulting} width={100} height={100} className='mx-auto'/>
+              <MdOutlineSecurity  className='text-8xl mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-gray-300'>
-                Beatiful Designs
+                Cyber Security
               </h3>
               <p className='py-2 dark:text-gray-400'>
                 Creating elegant designs suited for your project
