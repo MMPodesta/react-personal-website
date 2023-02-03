@@ -15,6 +15,7 @@ import {ListItem} from "../components/list-item";
 import { useState } from "react";
 import Link from 'next/link';
 import { LinkItem } from '@/components/link-item';
+import { PortfolioItem } from '@/components/portfolio-item';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -125,18 +126,12 @@ export default function Home() {
             </p>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3 flex-1'>
-              <a href="https://knuth.griffith.ie/~s3065078/ass03/" target='_blank'><Image src={boomerang} alt='' className='rounded-lg object-cover hover:shadow-lg hover:shadow-teal-400' width={'100%'} height={'100%'} /></a>
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <a href="https://store.mauriciomurta.com" target='_blank'><Image src={shoppy} alt='' className='rounded-lg object-cover hover:shadow-lg hover:shadow-teal-400' width={'100%'} height={'100%'}/></a>
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={skate} alt='' className='rounded-lg object-cover' width={'100%'} height={'100%'}/>
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <a href="https://knuth.griffith.ie/~s3065078/ass02/home.html" target='_blank'><Image src={garage} alt='' className='rounded-lg object-cover hover:shadow-lg hover:shadow-teal-400' width={'100%'} height={'100%'}/></a>
-            </div>
+            <PortfolioItem list={[
+              {id: 1 , link: 'https://knuth.griffith.ie/~s3065078/ass03/', photo: boomerang},
+              {id: 2 , link: 'https://store.mauriciomurta.com', photo: shoppy},
+              {id: 3 , link: 'https://skate.mauriciomurta.com/home.html', photo: skate},
+              {id: 4 , link: 'https://knuth.griffith.ie/~s3065078/ass02/home.html', photo: garage}
+            ]}/>
           </div>
         </section>
       </main>
