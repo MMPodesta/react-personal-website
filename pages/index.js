@@ -11,8 +11,9 @@ import shoppy from "../public/shoppy.png";
 import skate from "../public/skate.png";
 import garage from "../public/garage.png";
 import mauricio from "../public/mauricio.jpeg"
-
+import {ListItem} from "../components/list-item";
 import { useState } from "react";
+import Link from 'next/link';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -52,10 +53,11 @@ export default function Home() {
             </p>
           </div>
           <div className='text-5xl flex justify-center gap-12 py-3 text-gray-600 lg:text-7xl'>
-            <a href="https://github.com/MMPodesta" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><AiFillGithub/></a>
-            <a href="https://www.linkedin.com/in/mauriciomurta/" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><AiFillLinkedin/></a>
-            <a href="https://tryhackme.com/p/gangsta6" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><Icon icon="simple-icons:tryhackme" /></a>
-            <a href="https://leetcode.com/MMPodesta/" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><Icon icon="simple-icons:leetcode" /></a>
+            {/*Let these be components*/}
+            <Link href="https://github.com/MMPodesta" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><AiFillGithub/></Link>
+            <Link href="https://www.linkedin.com/in/mauriciomurta/" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><AiFillLinkedin/></Link>
+            <Link href="https://tryhackme.com/p/gangsta6" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><Icon icon="simple-icons:tryhackme" /></Link>
+            <Link href="https://leetcode.com/MMPodesta/" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><Icon icon="simple-icons:leetcode" /></Link>
           </div>
         </section>
         
@@ -82,9 +84,7 @@ export default function Home() {
                 Development of responsive database-backed websites. <br /> Making use of modern frameworks and libraries.
               </p>
               <h4 className='py-4 text-teal-600 text-lg'>Web tools I use</h4>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Next.js - React</p>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Tailwind CSS</p>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Firebase - MySql</p>
+              <ListItem children={['Next.js - React', 'Tailwind CSS', 'Firebase - MySql']}/>
             </div>
             <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10 hover:shadow-teal-400'>
               <BsCodeSlash  className='text-8xl mx-auto dark:text-teal-700'/>
@@ -95,9 +95,8 @@ export default function Home() {
                 Backend deveolpment aware of testing,<br /> concurency, time complexity, OOP and optimization.
               </p>
               <h4 className='py-4 text-teal-600 text-lg'>Programming tools I use</h4>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Java - Gradle</p>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>JUnit5</p>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Python</p>
+              <ListItem children={['Java-Gradle', 'JUnit5', 'Python']}/>
+
             </div>
             <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10 hover:shadow-teal-400'>
               <MdOutlineSecurity  className='text-8xl mx-auto dark:text-teal-700'/>
@@ -108,9 +107,7 @@ export default function Home() {
                 In the top 2% of learning platform tryhackme.com <br /> Knowledge on pentesting, privesc and industry standards.
               </p>
               <h4 className='py-4 text-teal-600 text-lg'>Security tools I use</h4>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Kali Linux</p>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Burp Suite</p>
-              <p className='text-gray-800 py-1 dark:text-gray-400'>Metasploit</p>
+              <ListItem children={['Kali Linux', 'Burp Suite', 'Metasploit']}/>
             </div>
           </div>
         </section>
