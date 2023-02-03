@@ -14,6 +14,7 @@ import mauricio from "../public/mauricio.jpeg"
 import {ListItem} from "../components/list-item";
 import { useState } from "react";
 import Link from 'next/link';
+import { LinkItem } from '@/components/link-item';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -53,11 +54,12 @@ export default function Home() {
             </p>
           </div>
           <div className='text-5xl flex justify-center gap-12 py-3 text-gray-600 lg:text-7xl'>
-            {/*Let these be components*/}
-            <Link href="https://github.com/MMPodesta" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><AiFillGithub/></Link>
-            <Link href="https://www.linkedin.com/in/mauriciomurta/" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><AiFillLinkedin/></Link>
-            <Link href="https://tryhackme.com/p/gangsta6" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><Icon icon="simple-icons:tryhackme" /></Link>
-            <Link href="https://leetcode.com/MMPodesta/" className='hover:text-gray-900 dark:hover:text-gray-400' target='_blank'><Icon icon="simple-icons:leetcode" /></Link>
+            <LinkItem list={[
+              {id: 1 , link: 'https://github.com/MMPodesta', icon: <AiFillGithub/>},
+              {id: 2 , link: 'https://www.linkedin.com/in/mauriciomurta/', icon: <AiFillLinkedin/>},
+              {id: 3 , link: 'https://tryhackme.com/p/gangsta6', icon: <Icon icon="simple-icons:tryhackme"/>},
+              {id: 4 , link: 'https://leetcode.com/MMPodesta/', icon: <Icon icon="simple-icons:leetcode"/>}
+            ]}/>
           </div>
         </section>
         
@@ -95,7 +97,7 @@ export default function Home() {
                 Backend deveolpment aware of testing,<br /> concurency, time complexity, OOP and optimization.
               </p>
               <h4 className='py-4 text-teal-600 text-lg'>Programming tools I use</h4>
-              <ListItem children={['Java-Gradle', 'JUnit5', 'Python']}/>
+              <ListItem children={['Java - Gradle', 'JUnit5', 'Python']}/>
 
             </div>
             <div className='text-center shadow-lg shadow-teal-700 p-10 rounded-xl my-10 hover:shadow-teal-400'>
