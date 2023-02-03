@@ -63,7 +63,7 @@ export default function Home() {
         
         <section>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-            <Image src={mauricio} layout='fill' objectFit='cover'/>
+            <Image src={mauricio} alt='' fill style={{objectFit:"cover"}}/>
           </div>
           <div>
             <h3 className='text-3xl py-1 dark:text-gray-300'>My Skills</h3>
@@ -124,16 +124,16 @@ export default function Home() {
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1'>
-              <a href="https://knuth.griffith.ie/~s3065078/ass03/" target='_blank'><Image src={boomerang} className='rounded-lg object-cover hover:shadow-lg hover:shadow-teal-400' width={'100%'} height={'100%'} /></a>
+              <a href="https://knuth.griffith.ie/~s3065078/ass03/" target='_blank'><Image src={boomerang} alt='' className='rounded-lg object-cover hover:shadow-lg hover:shadow-teal-400' width={'100%'} height={'100%'} /></a>
             </div>
             <div className='basis-1/3 flex-1'>
-              <a href="https://store.mauriciomurta.com" target='_blank'><Image src={shoppy} className='rounded-lg object-cover hover:shadow-lg hover:shadow-teal-400' width={'100%'} height={'100%'}/></a>
+              <a href="https://store.mauriciomurta.com" target='_blank'><Image src={shoppy} alt='' className='rounded-lg object-cover hover:shadow-lg hover:shadow-teal-400' width={'100%'} height={'100%'}/></a>
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image src={skate} className='rounded-lg object-cover' width={'100%'} height={'100%'}/>
+              <Image src={skate} alt='' className='rounded-lg object-cover' width={'100%'} height={'100%'}/>
             </div>
             <div className='basis-1/3 flex-1'>
-              <a href="https://knuth.griffith.ie/~s3065078/ass02/home.html" target='_blank'><Image src={garage} className='rounded-lg object-cover hover:shadow-lg hover:shadow-teal-400' width={'100%'} height={'100%'}/></a>
+              <a href="https://knuth.griffith.ie/~s3065078/ass02/home.html" target='_blank'><Image src={garage} alt='' className='rounded-lg object-cover hover:shadow-lg hover:shadow-teal-400' width={'100%'} height={'100%'}/></a>
             </div>
           </div>
         </section>
