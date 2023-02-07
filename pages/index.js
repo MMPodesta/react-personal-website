@@ -58,7 +58,7 @@ export default function Home() {
             <LinkItem list={[
               {id: 1 , link: 'https://github.com/MMPodesta', icon: <AiFillGithub/>},
               {id: 2 , link: 'https://www.linkedin.com/in/mauriciomurta/', icon: <AiFillLinkedin/>},
-              {id: 3 , link: 'https://tryhackme.com/p/gangsta6', icon: <Icon icon="simple-icons:tryhackme"/>},
+              {id: 3 , link: 'https://tryhackme.com/p/MMPodesta', icon: <Icon icon="simple-icons:tryhackme"/>},
               {id: 4 , link: 'https://leetcode.com/MMPodesta/', icon: <Icon icon="simple-icons:leetcode"/>}
             ]}/>
           </div>
